@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { EventService } from 'src/app/eventservice/event.service';
+import { EventService } from '../../../../eventservice/event.service';
 
 @Component({
   selector: 'app-gadget-header',

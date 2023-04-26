@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
 import { IEvent, EventService } from '../eventservice/event.service';
 import {
   IGadget,
@@ -156,28 +155,19 @@ export class BoardService {
 
   private saveBoardCollectionToDestination(boardCollection: IBoardCollection) {
     
-    if(environment.useDBForBoardStorage){
 
-
-    }else{
       localStorage.removeItem(this.BOARDCOLLECTION);
       localStorage.setItem(this.BOARDCOLLECTION, JSON.stringify(boardCollection));
-
-    }
     
   }
 
   private getBoardCollectionFromSource(): IBoardCollection {
     let _data;
     
-    if(environment.useDBForBoardStorage){
 
-
-    }else{
 
       _data = localStorage.getItem(this.BOARDCOLLECTION);
-    
-    }
+
     
     if (_data == null) {
       return { lastSelectedBoard: -1, boardList: [] };

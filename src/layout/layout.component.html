@@ -3,7 +3,7 @@
   <ul>
     <li style="list-style: none" *ngFor="let layout of _layouts; let i = index">
       <img [ngClass]="{ 'layout-selected': selectedLayoutId == layout.id }"
-        src="/assets/images/layout/{{ layout.structure }}.png"
+        src="../assets/images/layout/{{ layout.structure }}.png"
         (click)="selectBoardLayout(layout.structure, layout.id)" />
     </li>
   </ul>

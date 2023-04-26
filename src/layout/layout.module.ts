@@ -5,7 +5,7 @@ import { LayoutService } from './layout.service';
 
 @NgModule({
   declarations: [SidelayoutComponent],
-  imports: [CommonModule],
+  imports: [CommonModule,],
   exports: [SidelayoutComponent],
   providers: [LayoutService],
 })
