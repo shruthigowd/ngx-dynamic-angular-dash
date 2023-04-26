@@ -16,12 +16,10 @@ import { GadgetCommonModule } from './common/gadget-common/gadget-common.module'
 import { HttpClientModule } from '@angular/common/http';
 import {MatChipsModule} from '@angular/material/chips';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
-import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { GadgetGridCellHostComponent } from './gadget-grid-cell-host/gadget-grid-cell-host.component';
 
 @NgModule({
   declarations: [
-    BarChartComponent,
     GadgetGridCellHostComponent
   ],
   imports: [
@@ -44,8 +42,7 @@ import { GadgetGridCellHostComponent } from './gadget-grid-cell-host/gadget-grid
     NgxChartsModule
   ],
     exports: [
-      GadgetGridCellHostComponent,
-      BarChartComponent
+      GadgetGridCellHostComponent
     ],
     providers: [
 
