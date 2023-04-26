@@ -3,7 +3,7 @@ export * from './src/gadgets/gadget-grid-cell-host/gadget-grid-cell-host.compone
 export * from './src/gadgets/common/gadget-common/gadget-header/gadget-header.component'
 export * from './src/gadgets/common/gadget-common/gadget-operation/gadget-operation.component'
 export * from './src/gadgets/bar-chart/bar-chart.component'
-export * from './src/gadgets/gadgets.module'
+export * from './src/gadgets/gadgets.m  odule'
 export * from './src/layout/layout.module'
 export * from './src/layout/layout.component'
 export * from './src/board/board.module'
