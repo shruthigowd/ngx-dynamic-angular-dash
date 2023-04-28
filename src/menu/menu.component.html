@@ -1,0 +1,43 @@
+<!--
+<p>
+    <mat-toolbar>
+        <span>Packaging Line Manager</span>
+    </mat-toolbar>
+</p>
+-->
+
+<mat-toolbar color="primary">
+  <span >
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon (click)="toggleMenu()">menu</mat-icon>
+    </button>
+  </span>
+
+  <span>{{applicationTitle}}</span>
+  <span class="example-spacer"></span>
+
+  <span >
+    <span class="menu-text"> Configure board</span>
+    <button mat-icon-button (click)="openConfigDialog()" class="example-icon"
+      aria-label="Example icon-button with share icon">
+      <mat-icon>settings</mat-icon>
+    </button>
+  </span>
+
+  <span >
+    <span class="menu-text">Add tool</span>
+    <button mat-icon-button (click)="openGadgetLibraryDialog()" aria-label="Example icon-button with heart icon">
+      <mat-icon>playlist_add</mat-icon>
+    </button>
+  </span>
+
+  <span >
+    <span class="menu-text">Change layout</span>
+    <button mat-icon-button (click)="toggleLayout()" class="example-icon favorite-icon"
+      aria-label="Example icon-button with heart icon">
+      <mat-icon>dashboard</mat-icon>
+    </button>
+  </span>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</mat-toolbar>

@@ -3,5 +3,6 @@
   "dest": "../dist/ngx-dynamic-dashboard",
   "lib": {
     "entryFile": "./public_api.ts"
-  }
+  },
+  "assets": ["./assets/*"]
 }
