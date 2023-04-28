@@ -4,8 +4,9 @@ import {
   ViewContainerRef,
   OnInit
 } from '@angular/core';
-import {IGadget} from "../common/gadget-common/gadget-base/gadget.model";
 
+import { BarChartComponent } from '../bar-chart/bar-chart.component';
+import { IGadget } from '../common/gadget-common/gadget-base/gadget.model';
 
 
 /*
@@ -38,15 +39,16 @@ export class GadgetGridCellHostComponent implements OnInit {
 
     //TODO refactor and move to seperate clases
     switch (this.gadgetData.componentType) {
-    /*  case 'BarChartComponent':
-        gadgetRef = this.componentHost.createComponent(BarChartComponent);
-        break;*/
+
+      case 'BarChartComponent':
+          gadgetRef = this.componentHost.createComponent(BarChartComponent);
+          break;
       default:
       //do nothing
     }
 
-    /*if (gadgetRef) {
+    if (gadgetRef) {
       gadgetRef.instance.initializeConfiguration(this.gadgetData);
-    }*/
+    }
   }
 }
